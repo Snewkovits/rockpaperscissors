@@ -246,11 +246,11 @@ const onSelectedCardEnter = () => {
     document.getElementById('overlay').style.opacity = '1';
 }
 
-const onSelectedCardLeave = event => {
+const onSelectedCardLeave = () => {
     document.getElementById('overlay').style.opacity = '0';
 }
 
-const onPlayClick = event => {
+const onPlayClick = () => {
     let timeout = 0;
 
     const playerOverlay = document.getElementById('player-overlay');
@@ -322,15 +322,15 @@ const screenOverlayClick = event => {
     }, 500);
 }
 
-const onSelectedPlayerBackEnter = event => {
+const onSelectedPlayerBackEnter = () => {
     document.getElementById('player-overlay').style.opacity = '1';
 }
 
-const onSelectedPlayerBackLeave = event => {
+const onSelectedPlayerBackLeave = () => {
     document.getElementById('player-overlay').style.opacity = '0';
 }
 
-const onSelectedPlayerBackClick = event => {
+const onSelectedPlayerBackClick = () => {
     const playerOverlay = document.getElementById('player-overlay');
 
     selectedCard.removeEventListener('mouseover', onSelectedCardEnter);
