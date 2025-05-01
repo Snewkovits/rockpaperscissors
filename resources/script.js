@@ -242,7 +242,7 @@ const onCardClick = event => {
     }
 }
 
-const onSelectedCardEnter = event => {
+const onSelectedCardEnter = () => {
     document.getElementById('overlay').style.opacity = '1';
 }
 
@@ -291,7 +291,7 @@ const onPlayClick = event => {
         selectedCard.style.scale = 1;
     }, timeout += 100);
     setTimeout(() => {
-        flipCard(opponentCard);
+        flipAnonimCard(opponentCard);
     }, timeout += 1000);
     setTimeout(() => {
         opCard = opponentCard.querySelector('div').innerText.toLowerCase();

@@ -1,4 +1,4 @@
-const flipCard = card => {
+const flipAnonimCard = card => {
     let timeout = 0;
     const name = cards[Math.floor(Math.random() * cards.length)];
     
